@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap");
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scrollpadding, 5rem);
+}
+
+a{
+    text-decoration: none;
+}
+
+.pro-container .big-list .pro{
+    font-size: 18px;
+}
+
+.header-container>.header{
+    background-color: #212529;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+
+    color: white;
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+    justify-content: center;
+}
+
+.main-section>.make-italic :hover{
+    font-style: italic;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-container {
+    display: grid;
+    background-image: url('');
+}
+
+.main-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+pre {
+    white-space: pre-wrap;
+}
+/* .main-section:nth-child(even) {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.main-section:nth-child(odd) {
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+} */
+
+
+.section-center {
+    justify-content: center;
+}
+
+.primary-nav{
+    background-color: black;
+    display: inline-block;
+    
+}
+
+.primary-nav>ul>li{
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: 400;
+}
+p, pre {
+    max-width: 70%;
+    width: 100%;
+    display: block;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: calc(30% / 2);
+    gap: 0.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: #363636;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+.big-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.big-list li {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    border-bottom: 1px solid black;
+}
+
+.animate-fade-up {
+    animation-name: fadeup;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    animation-play-state: paused;
+    animation-fill-mode: backwards;
+    animation-delay: 300ms;
+}
+
+@keyframes fadeup {
+    0% {
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+
+.animate-character {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    border-right: .15em solid transparent;
+    letter-spacing: .15em;
+    font-size: 3rem;
+    color: black;
+    animation: typing 3.5s steps(40, end) forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.animate-character::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 1.2em;
+    background-color: black;
+    animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+ul{
+    list-style: none;
+    font-size: small;
+}

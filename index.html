@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MapHelp</title>
 </head>
 <body>
+    <nav class = "primary-nav">
+        <ul class = "nav-list">
+            <li><a href = "#main-section"></a></li>
+        </ul>
+    </nav>
+    <div class = "home-container">
+        <section class="main-section section-center">
+            <h1 class="text-center animate-character" style="animation-delay: 500ms;">Welcome to your Workspace.</h1>
+            <h2 class="animate-fade-up text-center" style="animation-delay: 750ms;">Focus on tasks at hand.</h2>
+        </section>
+    </div>
+    <section class="main-section section-center">
+        <p style="animation-delay: 300ms;">We provide you with top quality servises so that you can focus on what is necessary. Block out distractions so you can be the best version of yourself</p>
+        <pre class="language-js">
+            <code class="animate-fade-up language-js" style="animation-delay: 450ms;">
+                def is_prime(n):
+                    if n in [2, 3]:
+                        return True
+                    if (n == 1) or (n % 2 == 0):
+                        return False
+                    r = 3
+                    while r * r <= n:
+                        if n % r == 0:
+                            return False
+                        r += 2
+                    return True
+            </code>
+            <code class="animate-fade-up language-js" style="animation-delay: 600ms;">
+                const element = document.getElementById('id');
+            </code>
+            <code class="animate-fade-up language-js" style="animation-delay: 750ms;">
+                auto result = [](int n) -> int { return n <= 1 ? n : result(n - 1) + result(n - 2); }(10);
+            </code>
+        </pre>
+    </section>
+    <section class="main-section section-center pro-container">
+        <p style = "font-size: 21px;">We provide:</p>
+        <ul class="big-list">
+            <li class="animate-fade-up"><span class = "pro"><em>Task Organization:</em>  Users can categorize tasks, create to-do lists, and organize them based on priority, deadlines, or categories.</span></li>
+            <li class="animate-fade-up"><span class = "pro"><em>Goal Setting:</em>  Users set short-term and long-term goals, providing tools to track progress and milestones toward those objectives.</span></li>
+            <li class="animate-fade-up"><span class = "pro"><em>Time Tracking:</em>  Offers time-tracking tools to monitor the time spent on tasks and activities, helping users understand their productivity patterns.</span></li>
+            <li class="animate-fade-up"><span class = "pro"><em>Ease of Use & User Experience:</em> Features an intuitive and user-friendly interface, making it easy to navigate, input tasks, modify schedules, and access relevant information swiftly.</span></li>
+            <li class="animate-fade-up"><span class = "pro"><em>Security & Privacy:</em> Ensures data security and privacy, safeguarding user information and task details with encryption and secure access protocols.</span></li>
+            <li class="animate-fade-up"><span class = "pro"><em>Notifications & Alerts:</em> Sends reminders, notifications, or alerts for approaching deadlines, upcoming events, or scheduled tasks.</span></li>
+        </ul>
+        <p class = "animate-fade-up" style = "padding-bottom: 2%; padding-top: 2%; font-size: 21px;"> and so much more...</p>
+    </section>
+    <section class="main-section section-center">
+        <div class="section-grid">
+            <div class="card animate-fade-up" style="animation-delay: 0ms;">
+                <img src="https://media.istockphoto.com/id/1402604850/photo/the-word-about-us-on-wooden-cubes-business-communication-and-information.webp?b=1&s=170667a&w=0&k=20&c=M1zgL2pGwZ_g3cwmOvdMtzz92PlTLdihv6_wgaW1QZc=" />
+                <h3><a href = "#">About Us</a></h3>
+            </div>
+            <div style="animation-delay: 150ms;" class="card animate-fade-up">
+                <img src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29udGFjdCUyMHVzfGVufDB8fDB8fHww" />
+                <h3><a href = "#">Contact Us</a></h3>
+            </div>
+        </div>
+    </section>
     
+
+    <div class="footer-container">
+        <footer>
+            <p>© 2023 MapHelp</p>
+          <ul>
+            <li><span>Log in</span>/<span>Sign up</span></li>
+            <li>About us</li>
+            <li>Contact us</li>
+          </ul>
+        </footer>
+    </div>
+
+    <!-- Add JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
