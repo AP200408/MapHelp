@@ -67,7 +67,9 @@ pre {
     justify-content: center;
     padding: 0;
     position: fixed;
-    background: radial-gradient(circle at 1.3% 2.8%, rgb(239, 249, 249) 0%, rgb(182, 199, 226) 100.2%);
+    background-color: #5078f2;
+    background-image: linear-gradient(315deg, #5078f2 0%, #efe9f4 74%);
+    
     opacity: 80%;
     z-index: 1;
 }
