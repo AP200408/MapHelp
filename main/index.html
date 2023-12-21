@@ -3,21 +3,58 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
     <title>MapHelp</title>
 </head>
 <body>
     <div class="head-container">
-        <div class="navigation">
-            
-            <div class="quick-access text-center">
-                <p><a href = "#home-container">Home</a></p>
-                <p><a href = "#">About us</a></p>
-                <p><a href = "#">Contact us</a></p>
-                <p><a href = "#pro-container">Facilities</a></p>
-                <p><span><a href = "..\authentication\login\login.html">Log in</a></span>/<span><a href = "..\authentication\signup\signup.html">Sign up</a></span></p>
-            </div>
+
+        <!-- <div class="quick-access text-center">
+            <p><a href = "#home-container">Home</a></p>
+            <p><a href = "#">About us</a></p>
+            <p><a href = "#">Contact us</a></p>
+            <p><button class="tools"><a href = "#">Tools</a></button></p>
+            <p><span><a href = "..\authentication\login\login.html">Log in</a></span>/<span><a href = "..\authentication\signup\signup.html">Sign up</a></span></p>
+        </div> -->
+
+        <!-- <nav class="dropdownmenu">
+            <ul>
+                <li><a href=".\index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="..\Tools\all-Tools.html">Tools</a>
+                    <ul id = "submenu">
+                        <li><a href="..\Tools\Clock\timer.html">Clock</a></li>
+                        <li><a href="..\Tools\todo-list\todo.html">To-Do List</a></li>
+                        <li><a href="..\Tools\TimeTable\timetablemaker.html">Time Table</a></li>
+                    </ul>
+                </li>
+                <li><span><a href = "..\authentication\login\login.html">Log in</a></span>/<span><a href = "..\authentication\signup\signup.html">Sign up</a></span></li>
+            </ul>
+        </nav> -->
+
+        <div class="menu-bar">
+
+            <h1 class="logo" style="margin-right: 3.7%;">Map<span>Help.</span></h1>
+
+            <ul class = "text-center">
+                <li><a href=".\index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="..\Tools\all-Tools.html">Tools <i class = "fas fa-caret-down"></i></fa-caret-down></a>
+                    <div class="dropdown-menu">
+                        <ul id = "submenu">
+                            <li><a href="..\Tools\Clock\timer.html">Clock</a></li>
+                            <li><a href="..\Tools\todo-list\todo.html">To-Do List</a></li>
+                            <li><a href="..\Tools\TimeTable\timetablemaker.html">Time Table</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><span><a href = "..\authentication\login\login.html">Log in</a></span>/<span><a href = "..\authentication\signup\signup.html">Sign up</a></span></li>
+            </ul>
         </div>
+
         <div class = "home-container">
             <section class="main-section section-center">
                 <h1 class="text-center animate-character" style="animation-delay: 500ms;">Welcome to your Workspace.</h1>
@@ -28,7 +65,7 @@
     <section class="main-section section-center">
         <p style="animation-delay: 300ms; font-size: 24px;">We provide you with top quality servises so that you can focus on what is necessary. Block out distractions so you can be the best version of yourself</p>
         <pre class="language-js">
-            <code class="animate-fade-up language-js" style="animation-delay: 450ms; font-size: 16px">
+            <code class="animate-fade-up language-js" style="animation-delay: 450ms;">
                 def is_prime(n):
                     if n in [2, 3]:
                         return True
@@ -65,7 +102,7 @@
         <div class="section-grid">
             <div class="card animate-fade-up" style="animation-delay: 0ms;">
                 <img src="https://media.istockphoto.com/id/1402604850/photo/the-word-about-us-on-wooden-cubes-business-communication-and-information.webp?b=1&s=170667a&w=0&k=20&c=M1zgL2pGwZ_g3cwmOvdMtzz92PlTLdihv6_wgaW1QZc=" />
-                <h3><a href = "#">About Us</a></h3>
+                <h3 class = "text-center"><a href = "#">About Us</a></h3>
             </div>
             <div style="animation-delay: 150ms;" class="card animate-fade-up">
                 <img src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29udGFjdCUyMHVzfGVufDB8fDB8fHww" />
