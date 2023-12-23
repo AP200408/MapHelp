@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
 
 html,
 body {
     padding: 0;
     margin: 0;
     font-family: "Montserrat", sans-serif;
+    
 }
 
 html{
@@ -27,7 +33,6 @@ body {
 }
 
 .menu-bar{
-    
     height: 80px;
     width: 100%;
     display: flex;
@@ -37,6 +42,7 @@ body {
     position: fixed;
     background: radial-gradient(circle at 1.3% 2.8%, rgb(239, 249, 249) 0%, rgb(182, 199, 226) 100.2%);
     opacity: 80%;
+    z-index: 10;
 }
 
 .logo{
@@ -45,7 +51,7 @@ body {
 }
 
 .logo span{
-    color: rgb(255, 166, 0)
+    color: rgb(179, 131, 226)
 }
 
 .menu-bar ul{
@@ -98,3 +104,109 @@ body {
     margin-left: 10px;
     padding-top: 3px;
 }
+
+.layout{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: 2px solid black;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.layout>h1{
+    color: rgb(179, 131, 226);
+    font-size: 10rem;
+    text-align: center;
+    opacity: 0.55;
+    user-select: none;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: rgb(179, 131, 226);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: all 0.3s;
+}
+
+button:hover{
+    color: rgb(73, 55, 94);
+}
+
+.layout>ul li {
+    list-style: none;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+    padding-bottom: 12px;
+    position: relative;
+    padding-top: 12px;
+    padding-left: 40px;
+}
+
+
+.layout>ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.layout > ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+.layout > ul li.checked::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-image: url(images/unchecked.png); /* Change this to your unchecked image */
+    background-size: cover;
+    background-position: center;
+}
+
+.layout > ul li.checked.checked::before {
+    background-image: url(images/checked.png); /* Change this to your checked image */
+}
+
+

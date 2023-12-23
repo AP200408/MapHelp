@@ -4,7 +4,7 @@ const observer = new IntersectionObserver(
             if (element.isIntersecting) {
                 observer.unobserve(element.target);
                 element.target.style.animationPlayState = "running";
-            }bfv
+            }
         });
     },
     { rootMargins: "0% 0% 0% 0%" }

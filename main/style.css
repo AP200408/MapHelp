@@ -67,9 +67,8 @@ pre {
     justify-content: center;
     padding: 0;
     position: fixed;
-    background-color: #5078f2;
-    background-image: linear-gradient(315deg, #5078f2 0%, #efe9f4 74%);
-    
+    background-color: aliceblue;
+
     opacity: 80%;
     z-index: 1;
 }
